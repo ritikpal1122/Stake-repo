@@ -1,6 +1,5 @@
 import DaoImg from "../images/Dao.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { AnimatedSection } from "./AnimatedSection";
 export const Dao = () => {
   const getFadeTopStyles = (isFadeLeftInViewPort) => ({
     transition: "all 1s ease-in",
@@ -14,7 +13,7 @@ export const Dao = () => {
   });
   return (
     <div className="Dao">
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      <div getStyles={getFadeTopStyles}>
         <div className="topTitle">
           <div id="line"></div>
           <div>
@@ -26,19 +25,19 @@ export const Dao = () => {
 
           <div id="line"></div>
         </div>
-      </AnimatedSection>
+      </div>
 
       <div className="bottomImg">
-        <AnimatedSection getStyles={getFadeTopStyles}>
+        <div getStyles={getFadeTopStyles}>
           <div
             className="daoImg"
             style={{
               backgroundImage: `url(${DaoImg})`,
             }}
           ></div>
-        </AnimatedSection>
+        </div>
         <div className="rightText">
-          <AnimatedSection getStyles={getFadeTopStyles}>
+          <div getStyles={getFadeTopStyles}>
             <div>
               <span className="type1 lgText">
                 MUNITY{" "}
@@ -52,8 +51,8 @@ export const Dao = () => {
                 </span>
               </span>
             </div>
-          </AnimatedSection>
-          <AnimatedSection getStyles={getFadeTopStyles}>
+          </div>
+          <div getStyles={getFadeTopStyles}>
             <div>
               <span className="type3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -63,8 +62,8 @@ export const Dao = () => {
                 <span className="type4">Read More.</span>
               </span>
             </div>
-          </AnimatedSection>
-          <AnimatedSection getStyles={getFadeTopStyles}>
+          </div>
+          <div getStyles={getFadeTopStyles}>
             <div>
               <div className="bottomBtn">
                 View Governance{" "}
@@ -73,7 +72,7 @@ export const Dao = () => {
                 </span>
               </div>
             </div>
-          </AnimatedSection>
+          </div>
         </div>
       </div>
     </div>

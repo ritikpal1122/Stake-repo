@@ -1,5 +1,4 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { AnimatedSection } from "./AnimatedSection";
 export const Munityadd = () => {
   const getFadeTopStyles = (isFadeLeftInViewPort) => ({
     transition: "all 1s ease-in",
@@ -20,7 +19,7 @@ export const Munityadd = () => {
     <div className="Munityadd">
       <div class="gradient gradient--8"></div>
       <div class="gradient gradient--9"></div>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      <div getStyles={getFadeTopStyles}>
         <div className="topTitle">
           <div id="line"></div>
           <div>
@@ -33,8 +32,8 @@ export const Munityadd = () => {
 
           <div id="line"></div>
         </div>
-      </AnimatedSection>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      </div>
+      <div getStyles={getFadeTopStyles}>
         <div className="middleTitle">
           <span>
             Download the{" "}
@@ -44,9 +43,9 @@ export const Munityadd = () => {
             Kit for branding assets.
           </span>
         </div>
-      </AnimatedSection>
+      </div>
       <div className="bottomImg">
-        <AnimatedSection getStyles={getFadeLeftStyles}>
+        <div getStyles={getFadeLeftStyles}>
           <div className="leftImg titleImg">
             <div className="download Ldown">
               <div className="Ltext">
@@ -61,8 +60,8 @@ export const Munityadd = () => {
             </div>{" "}
             <div className="borderTitle"></div>
           </div>
-        </AnimatedSection>
-        <AnimatedSection getStyles={getFadeRightStyles}>
+        </div>
+        <div getStyles={getFadeRightStyles}>
           <div className="rightImg titleImg">
             <div className="download Rdown">
               <div className="Ltext">
@@ -77,9 +76,9 @@ export const Munityadd = () => {
             </div>
             <div className="borderTitle"></div>
           </div>
-        </AnimatedSection>
+        </div>
       </div>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      <div getStyles={getFadeTopStyles}>
         <div className="munityUpdate">
           <div className="updateDiv">
             <div className="Ltext">
@@ -93,7 +92,7 @@ export const Munityadd = () => {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </div>
     </div>
   );
 };

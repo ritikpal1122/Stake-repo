@@ -1,5 +1,4 @@
 import metahorseImg from "../images/Metahorse.png";
-import { AnimatedSection } from "./AnimatedSection";
 import Timeline0 from "../images/Timeline0.svg";
 const handleEnter = (e) => {};
 const handleLeave = () => {
@@ -20,7 +19,7 @@ export const Metahorse = () => {
     <div className="Metahorse">
       <div class="gradient gradient--4"></div>
       <div class="gradient gradient--5"></div>
-      <AnimatedSection getStyles={getFadeLeftStyles}>
+      <div getStyles={getFadeLeftStyles}>
         <div className="topTitle">
           <div id="line1"></div>
 
@@ -41,7 +40,7 @@ export const Metahorse = () => {
 
           <div id="line2"></div>
         </div>
-      </AnimatedSection>
+      </div>
       <div className="bottomImg">
         <div
           className="metahorseImg"
@@ -49,7 +48,7 @@ export const Metahorse = () => {
             backgroundImage: `url(${metahorseImg})`,
           }}
         ></div>
-        <AnimatedSection getStyles={getFadeTopStyles}>
+        <div getStyles={getFadeTopStyles}>
           <div className="progressBar">
             <ul className="events">
               <li
@@ -114,7 +113,7 @@ export const Metahorse = () => {
               </li>
             </ul>
           </div>
-        </AnimatedSection>
+        </div>
       </div>
     </div>
   );

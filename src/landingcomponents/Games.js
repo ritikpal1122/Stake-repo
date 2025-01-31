@@ -3,7 +3,7 @@ import Game1 from "../images/Game1.png";
 import Game2 from "../images/Game2.png";
 import Game3 from "../images/Game3.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { AnimatedSection } from "./AnimatedSection";
+
 const getFadeTopStyles = (isFadeLeftInViewPort) => ({
   transition: "all 1s ease-in",
   opacity: isFadeLeftInViewPort ? "1" : "0",
@@ -28,7 +28,7 @@ export const Games = () => {
   return (
     <div className="Games">
       <div class="gradient gradient--3"></div>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      <div getStyles={getFadeTopStyles}>
         <div className="topTitle">
           <div id="line"></div>
 
@@ -42,8 +42,8 @@ export const Games = () => {
 
           <div id="line"></div>
         </div>
-      </AnimatedSection>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      </div>
+      <div getStyles={getFadeTopStyles}>
         <div className="topText">
           <div>
             <img src={GameImg} alt="GImg" />
@@ -57,10 +57,10 @@ export const Games = () => {
             </span>
           </div>
         </div>
-      </AnimatedSection>
+      </div>
 
       <div className="imgTitle">
-        <AnimatedSection getStyles={getFadeTopStylesL}>
+        <div getStyles={getFadeTopStylesL}>
           <div className="leftTitle">
             <div
               className="GameImage"
@@ -83,8 +83,8 @@ export const Games = () => {
               </div>
             </div>
           </div>
-        </AnimatedSection>
-        <AnimatedSection getStyles={getFadeTopStylesC}>
+        </div>
+        <div getStyles={getFadeTopStylesC}>
           <div className="centerTitle">
             <div
               className="GameImage"
@@ -106,8 +106,8 @@ export const Games = () => {
               </div>
             </div>
           </div>
-        </AnimatedSection>
-        <AnimatedSection getStyles={getFadeTopStylesR}>
+        </div>
+        <div getStyles={getFadeTopStylesR}>
           <div className="rightTitle">
             <div
               className="GameImage"
@@ -129,7 +129,7 @@ export const Games = () => {
               </div>
             </div>
           </div>
-        </AnimatedSection>
+        </div>
       </div>
     </div>
   );

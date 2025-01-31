@@ -2,7 +2,6 @@ import { Slides } from "./Slides";
 import Slide1 from "../images/Slidebg-1.jpg";
 import Slide2 from "../images/Slidebg-2.jpg";
 import Slide3 from "../images/Slidebg-3.jpg";
-import { AnimatedSection } from "./AnimatedSection";
 export const Munitynew = () => {
   const getFadeTopStyles = (isFadeLeftInViewPort) => ({
     transition: "all 1s ease-in",
@@ -40,7 +39,7 @@ export const Munitynew = () => {
 
   return (
     <div className="Munitynew">
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      <div getStyles={getFadeTopStyles}>
         <div className="topTitle">
           <div id="line"></div>
           <div>
@@ -52,14 +51,14 @@ export const Munitynew = () => {
 
           <div id="line"></div>
         </div>
-      </AnimatedSection>
+      </div>
       <div className="bottomImg">
         <div className="daoImg">
           <Slides slides={slideData} heading="Example Slider" />
         </div>
 
         <div className="rightText">
-          <AnimatedSection getStyles={getFadeRightStyles}>
+          <div getStyles={getFadeRightStyles}>
             <div>
               <span className="type1 lgText">
                 MUNITY{" "}
@@ -68,8 +67,8 @@ export const Munitynew = () => {
                 </span>
               </span>
             </div>
-          </AnimatedSection>
-          <AnimatedSection getStyles={getFadeTopStyles}>
+          </div>
+          <div getStyles={getFadeTopStyles}>
             <div>
               <span className="type3">
                 This article will cover some of the major milestones
@@ -78,8 +77,8 @@ export const Munitynew = () => {
                 on features, timelines, staking and more!
               </span>
             </div>
-          </AnimatedSection>
-          <AnimatedSection getStyles={getFadeTopStyles}>
+          </div>
+          <div getStyles={getFadeTopStyles}>
             <div>
               <div className="bottomBtn">
                 Read Now{" "}
@@ -88,7 +87,7 @@ export const Munitynew = () => {
                 </span>
               </div>
             </div>
-          </AnimatedSection>
+          </div>
         </div>
       </div>
     </div>

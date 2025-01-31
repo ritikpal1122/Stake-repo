@@ -1,5 +1,4 @@
 import LegendaryImg from "../images/Legendary.png";
-import { AnimatedSection } from "./AnimatedSection";
 export const Legendary = () => {
   const getFadeRightStyles = (isFadeLeftInViewPort) => ({
     transition: "all 1.5s ease-in",
@@ -9,7 +8,7 @@ export const Legendary = () => {
   return (
     <div className="Legendary">
       <div class="gradient gradient--6"></div>
-      <AnimatedSection getStyles={getFadeRightStyles}>
+      <div getStyles={getFadeRightStyles}>
         <div className="topTitle">
           <div id="line1"></div>
 
@@ -24,7 +23,7 @@ export const Legendary = () => {
 
           <div id="line2"></div>
         </div>
-      </AnimatedSection>
+      </div>
 
       <div className="bottomImg">
         <div className="rightText">

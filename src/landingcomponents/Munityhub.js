@@ -1,6 +1,5 @@
 import GImg from "../images/G.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { AnimatedSection } from "./AnimatedSection";
 import Gate from "../images/Gate.svg";
 import Mexc from "../images/Mexc.svg";
 import Coin from "../images/Coin.svg";
@@ -20,7 +19,7 @@ export const Munityhub = () => {
   return (
     <div className="Munityhub">
       <div class="gradient gradient--2"></div>
-      <AnimatedSection getStyles={getFadeLeftStyles}>
+      <div getStyles={getFadeLeftStyles}>
         <div className="topTitle">
           <div id="line1"></div>
 
@@ -41,9 +40,9 @@ export const Munityhub = () => {
 
           <div id="line2"></div>
         </div>
-      </AnimatedSection>
+      </div>
 
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      <div getStyles={getFadeTopStyles}>
         <div className="imgTitle">
           <div class="border-gradient1">
             <div className="borderTitle leftTitle">
@@ -148,7 +147,7 @@ export const Munityhub = () => {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </div>
     </div>
   );
 };
